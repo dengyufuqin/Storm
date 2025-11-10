@@ -7,7 +7,7 @@
 # Abstract
 Accurate 6D pose estimation and tracking are fundamental capabilities for physical AI systems such as robots.
 However, existing approaches typically rely on a manually annotated segmentation mask of the target in the first frame, which is labor-intensive and leads to reduced performance when faced with occlusions or rapid movement. 
-To address these limitations, We propose **STORM** (**S**egment, **T**rack, and **O**bject **R**e-localization from a single 3D **M**odel), an open-source robust real-time 6D pose estimation system that requires no manual annotation.
+To address these limitations, we propose **STORM** (**S**egment, **T**rack, and **O**bject **R**e-localization from a single 3D **M**odel), an open-source robust real-time 6D pose estimation system that requires no manual annotation.
 STORM employs a novel three-stage pipeline combining vision-language understanding with self-supervised feature matching: contextual object descriptions guide localization, self-cross-attention mechanisms identify candidate regions, and a segmentation model produces precise masks for accurate pose estimation. 
 Another key innovation is our automatic re-registration mechanism that detects tracking failures through feature similarity monitoring and recovers from severe occlusions or rapid motion. 
 STORM achieves state-of-the-art accuracy on challenging industrial datasets featuring multi-object occlusions, high-speed motion, and varying illumination, while operating at real-time speeds without additional training. This annotation-free approach significantly reduces deployment overhead, providing a practical solution for modern applications, such as flexible manufacturing and intelligent quality control. 
