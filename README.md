@@ -1,5 +1,11 @@
 # STORM: Segment, Track, and Object Re-Localization from a Single 3D Model
 
+<div align="center">
+  <a href=https://www.neural4d.com/research/direct3d-s2 target="_blank"><img src=https://img.shields.io/badge/Project%20Page-333399.svg?logo=googlehome height=22px></a>
+  <a href=https://huggingface.co/spaces/wushuang98/Direct3D-S2-v1.0-demo target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20Demo-276cb4.svg height=22px></a>
+  <a href=https://huggingface.co/spaces/wushuang98/Direct3D-S2-v1.0-demo target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20Models-d96902.svg height=22px></a>
+  <a href=https://arxiv.org/pdf/2505.17412 target="_blank"><img src=https://img.shields.io/badge/Arxiv-b5212f.svg?logo=arxiv height=22px></a>
+</div>
 
 # Abstract
 Accurate 6D pose estimation and tracking are fundamental
