@@ -1,8 +1,7 @@
 # STORM: Segment, Track, and Object Re-Localization from a Single 3D Model
 
 <div align="center">
-  <a href= target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20Models-d96902.svg height=22px></a>
-  <a href= target="_blank"><img src=https://img.shields.io/badge/Arxiv-b5212f.svg?logo=arxiv height=22px></a>
+  <a href= target="_blank"><img src=https://img.shields.io/badge/Arxiv-b5212f.svg?logo=arxiv height=22px>
 </div>
 
 # Abstract
