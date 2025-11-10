@@ -99,7 +99,7 @@ You can generate the 6D pose estimation results using FoundationPose, with the m
 python evaluation_SOM.py --bop_dir "xxxx"
 ```
 
-## generate the 6D Pose estimation tracking result from FP+STROM
+## generate the 6D Pose estimation tracking result from FP+STORM
 You can test the 6D pose estimation tracking results from FoundationPose, either with TOM or on its own. The mask will be provided by SOM if re-registration is required.
 ```bash
 python evaluation_STORM.py --bop_dir "xxxx"
