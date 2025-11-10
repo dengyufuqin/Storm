@@ -1,0 +1,3 @@
+[submodule "FoundationPose"]
+	path = FoundationPose
+	url = git@github.com:NVlabs/FoundationPose.git

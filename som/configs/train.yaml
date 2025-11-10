@@ -1,0 +1,77 @@
+# configs/train.yaml
+
+data:
+  root: "********"
+  image_size: 256
+  include_datasets: ["lmo", "hb", "tless", "tudl", "ycbv", "tyol", "ruapc", "lm"] 
+
+model:
+  use_lang: false
+
+  encoder:
+    model_name: "dinov2_vitb14_reg"
+    freeze_backbone: true
+    img_size: 224
+
+  prompt:
+    encoder_args:
+      model_name: "dinov2_vitb14_reg"
+      freeze_backbone: true
+      img_size: 224
+
+  hsfa:
+    depth: 3
+    num_heads: 8
+    mlp_dim: 2048
+    attention_downsample_rate: 3
+    cond_dim: null  
+    num_views: 16
+    # output_indices: [0, 3, 6]
+
+  decoder:
+    num_multimask_outputs: 2
+    iou_head_depth: 3
+    iou_head_hidden_dim: 384
+
+train:
+  batch_size: 256
+  num_workers: 8
+  epochs: 300
+  max_steps:     80000
+  val_interval:  1000      
+  test_interval: 10000
+  ema_alpha: 0.99
+  save_dir: "********"
+
+  wandb_entity: "********"
+  running_name: "********"
+  experiment_name: "********"
+
+  optimizer:
+    lr: 0.0002          
+    weight_decay: 0.01
+  scheduler:
+    warmup_steps: 4000   
+    eta_min: 0.000001
+  grad_clip:
+    enabled: true
+    max_norm: 0.1   
+test:
+  batch_size: 128
+  num_workers: 8
+
+loss:
+  weight_focal:    20.0     
+  focal_alpha:     0.25    
+  focal_gamma:     2.0     
+
+  weight_dice:     1.0 
+  weight_iou_pred: 1.0   
+  weight_iou:      1.0
+
+  weight_tversky:  0.1   
+  tversky_alpha:   0.5     
+  tversky_beta:    0.5     
+
+  weight_fbeta:    0.0
+  fbeta_beta:      0.5
